@@ -8,10 +8,11 @@ center {
 
 t1 {
     color: blueviolet;
+    font-size: large;
 }
 
 b1 {
     background-color: blue;
     color: white;
-    font-size: medium;
+    font-size: small;
 }

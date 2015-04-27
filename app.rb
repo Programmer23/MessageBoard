@@ -11,3 +11,10 @@ end
 get '/signup' do
   erb :signup
 end
+
+post '/signup' do
+  u = User.new
+  u.name = params[:name]
+  u.password = params[:password]
+  u.save
+end

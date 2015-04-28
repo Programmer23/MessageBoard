@@ -8,6 +8,10 @@ get '/' do
   erb :index
 end
 
+post '/' do
+
+end
+
 get '/signup' do
   erb :signup
 end

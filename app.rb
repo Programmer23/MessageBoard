@@ -14,7 +14,9 @@ end
 
 post '/signup' do
   u = User.new
-  u.name = params[:name]
-  u.password = params[:password]
+  u.name = params[:new_username]
+  u.password = params[:new_password]
   u.save
+
+  redirect '/'
 end

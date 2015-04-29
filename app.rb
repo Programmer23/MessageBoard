@@ -9,18 +9,18 @@ get '/' do
 end
 
 post '/' do
+  if
+  end
 
-end
+  get '/signup' do
+    erb :signup
+  end
 
-get '/signup' do
-  erb :signup
-end
+  post '/signup' do
+    u = User.new
+    u.name = params[:new_username]
+    u.password = params[:new_password]
+    u.save
 
-post '/signup' do
-  u = User.new
-  u.name = params[:new_username]
-  u.password = params[:new_password]
-  u.save
-
-  redirect '/'
-end
+    redirect '/'
+  end

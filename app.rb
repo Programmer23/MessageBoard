@@ -22,7 +22,6 @@ post '/' do
   else
     @correct = false
     session["message"] = "Username or Password is incorrect"
-    redirect '/'
   end
 end
 

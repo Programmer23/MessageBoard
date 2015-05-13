@@ -42,6 +42,6 @@ post '/signup' do
   redirect '/'
 end
 
-get 'main' do
+get '/main' do
   erb :main
 end

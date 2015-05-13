@@ -45,3 +45,10 @@ end
 get '/main' do
   erb :main
 end
+
+post '/main' do
+  t = Topic.new
+  t.name = params[:topic]
+  t.description = params[:thread]
+  t.save
+end

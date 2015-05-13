@@ -1,5 +1,7 @@
 body {
-    background-color: cyan;
+    background-image: url('/img/wallpaper.jpg');
+    background-size: cover;
+    background-position: center center;
 }
 
 center {
@@ -14,5 +16,11 @@ t1 {
 b1 {
     background-color: blue;
     color: white;
+    font-size: small;
+}
+
+b2{
+    background-color: red;
+    color: antiquewhite;
     font-size: small;
 }

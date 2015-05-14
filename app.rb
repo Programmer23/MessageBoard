@@ -51,4 +51,12 @@ post '/main' do
   t.name = params[:topic]
   t.description = params[:thread]
   t.save
+  @display_name = params[:topic]
+  @display_post = params[:thread]
+
+  redirect '/posts'
+end
+
+get '/posts' do
+  erb :posts
 end
